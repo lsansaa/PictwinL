@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.ucn.disc.dam.luis.pictwinl.activities.MainActivity">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content"
+        >
+        <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/twins_list">
+        </ListView>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_camera"
+            app:fabSize="normal"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="dispatchTakePictureIntent"
+            app:layout_anchor="@+id/twins_list"
+            app:layout_anchorGravity="bottom|right|end"/>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

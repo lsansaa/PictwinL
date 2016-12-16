@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/ibPic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_gemini"
+        android:layout_weight="1"
+        android:contentDescription="@string/picIB"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        />
+    <ImageButton
+        android:id="@+id/ibTwin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_gemini"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:contentDescription="@string/twinIB"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>

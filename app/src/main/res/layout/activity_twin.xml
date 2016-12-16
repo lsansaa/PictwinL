@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/user_photo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_gemini"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/photoDescription" />
+    </LinearLayout>
+
+</LinearLayout>
